@@ -1,0 +1,170 @@
+[
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\Bullet.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\Bullet.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\CapsuleCollisionCheck.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\CapsuleCollisionCheck.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\Enemy.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\Enemy.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\EnemyAnim.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\EnemyAnim.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\EnemyFSM.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\EnemyFSM.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\MyAnimInstance.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\MyAnimInstance.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\Test1.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\Private\\Test1.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\WakOfSpy.Build.cs",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\WakOfSpy.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\WakOfSpy.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\WakOfSpyCharacter.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\WakOfSpyCharacter.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\WakOfSpyGameMode.cpp",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	},
+	{
+		"file": "D:\\UnRealProject\\WakOfSlice\\Source\\WakOfSpy\\WakOfSpyGameMode.h",
+		"arguments": [
+			"C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\VC\\Tools\\MSVC\\14.29.30133\\bin\\HostX64\\x64\\cl.exe",
+			"@D:\\UnRealProject\\WakOfSlice\\.vscode\\compileCommands_WakOfSpy\\WakOfSpy.255.rsp"
+		],
+		"directory": "C:\\Program Files\\Epic Games\\UE_5.1\\Engine\\Source"
+	}
+]
