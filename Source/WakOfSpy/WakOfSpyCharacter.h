@@ -54,6 +54,26 @@ public:
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = Speed)
 	float runSpeed = 500;
 
+	// 플레이어 스텟을 나타내는 변수들
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Player Stats")
+    float MaxHealth = 100;
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player Stats")
+    float CurrentHealth = 100;
+
+    UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Player Stats")
+    float MaxStamina = 200;
+
+    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Player Stats")
+    float CurrentStamina = 200;
+
+    // 플레이어 스텟을 수정하는 함수들
+    UFUNCTION(BlueprintCallable, Category = "Player Stats")
+    void ModifyHealth(float Amount);
+
+    UFUNCTION(BlueprintCallable, Category = "Player Stats")
+    void ModifyStamina(float Amount);
+
 public:
 	bool bIsSprinting = false;
 	bool bIsSlowWalking = false;

@@ -12,7 +12,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "MyAnimInstance.h"
 #include "Engine/World.h"
-#include "DrawDebugHelpers.h" // µğ¹ö±× ¶óÀÎÀ» ±×¸®±â À§ÇØ ÇÊ¿äÇÑ Çì´õ ÆÄÀÏ
+#include "DrawDebugHelpers.h" // ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ê¿ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 #include <iostream>
 #include <cstdlib>
 #include <ctime>
@@ -69,7 +69,12 @@ AWakOfSpyCharacter::AWakOfSpyCharacter()
 
 	
 
-	 
+	 // ê¸°ë³¸ ìŠ¤í…Ÿ ì„¤ì •
+    MaxHealth = 100.0f;
+    CurrentHealth = MaxHealth;
+
+    MaxStamina = 100.0f;
+    CurrentStamina = MaxStamina;
 }
 
 void AWakOfSpyCharacter::BeginPlay()
@@ -77,7 +82,7 @@ void AWakOfSpyCharacter::BeginPlay()
 	// Call the base class  
 	Super::BeginPlay();
 
-	// ¾Ö´Ï¸ŞÀÌ¼Ç ºí·çÇÁ¸°Æ® ÇÒ´ç
+	// ï¿½Ö´Ï¸ï¿½ï¿½Ì¼ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æ® ï¿½Ò´ï¿½
 	anim = Cast<UMyAnimInstance>(GetMesh()->GetAnimInstance());
 
 	//Add Input Mapping Context
@@ -157,28 +162,28 @@ void AWakOfSpyCharacter::StartSprinting()
 {
 	bIsSprinting = true;
 	SetWalkSpeed();
-	// ´Ş¸®±â µ¿ÀÛÀ» ½ÃÀÛÇÏ´Â ·ÎÁ÷À» ÀÛ¼ºÇÕ´Ï´Ù.
+	// ï¿½Ş¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Õ´Ï´ï¿½.
 }
 
 void AWakOfSpyCharacter::StopSprinting()
 {
 	bIsSprinting = false;
 	SetWalkSpeed();
-	// ´Ş¸®±â µ¿ÀÛÀ» ¸ØÃß´Â ·ÎÁ÷À» ÀÛ¼ºÇÕ´Ï´Ù.
+	// ï¿½Ş¸ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Õ´Ï´ï¿½.
 }
 
 void AWakOfSpyCharacter::StartSlowWalking()
 {
 	bIsSlowWalking = true;
 	SetWalkSpeed();
-	// ÃµÃµÈ÷ µ¿ÀÛÀ» ½ÃÀÛÇÏ´Â ·ÎÁ÷À» ÀÛ¼ºÇÕ´Ï´Ù.
+	// ÃµÃµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ï´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Õ´Ï´ï¿½.
 }
 
 void AWakOfSpyCharacter::StopSlowWalking()
 {
 	bIsSlowWalking = false;
 	SetWalkSpeed();
-	// ÃµÃµÈ÷ µ¿ÀÛÀ» ¸ØÃß´Â ·ÎÁ÷À» ÀÛ¼ºÇÕ´Ï´Ù.
+	// ÃµÃµï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ß´ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Û¼ï¿½ï¿½Õ´Ï´ï¿½.
 }
 void AWakOfSpyCharacter::SetWalkSpeed()
 {
@@ -240,36 +245,36 @@ void AWakOfSpyCharacter::Tick(float DeltaTime)
 
 void AWakOfSpyCharacter::PerformRaycast()
 {
-	// ÇöÀç ¿ùµå °¡Á®¿À±â
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	UWorld* World = GetWorld();
 	if (!World) return;
 
-	// Raycast¸¦ ¹ß»çÇÒ ½ÃÀÛ À§Ä¡¿Í ¹æÇâ ¼³Á¤
+	// Raycastï¿½ï¿½ ï¿½ß»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	FVector StartLocation = GetActorLocation();
 	FVector DownVector = -GetActorUpVector();
-	FVector EndLocation = StartLocation + (DownVector * 160.0f); // RaycastÀÇ ÃÖ´ë °Å¸® ¼³Á¤
+	FVector EndLocation = StartLocation + (DownVector * 160.0f); // Raycastï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-	// Raycast¸¦ ¼öÇàÇÒ Ã¤³Î ¼³Á¤
+	// Raycastï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	ECollisionChannel TraceChannel = ECC_Visibility;
 
-	// Ãæµ¹ °á°ú¸¦ ÀúÀåÇÒ º¯¼ö
+	// ï¿½æµ¹ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	FHitResult HitResult;
 
 	FCollisionQueryParams queryParams;
-	queryParams.AddIgnoredActor(this); // ÀÚ±â ÀÚ½ÅÀº ¹«½ÃÇÕ´Ï´Ù.
+	queryParams.AddIgnoredActor(this); // ï¿½Ú±ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
 
-	// Raycast ½ÇÇà
+	// Raycast ï¿½ï¿½ï¿½ï¿½
 	bool bHit = World->LineTraceSingleByChannel(HitResult, StartLocation, EndLocation, TraceChannel, queryParams);
 
 	if (bHit)
 	{
 
-		// Ãæµ¹ÀÌ °¨ÁöµÈ °æ¿ì ºÎ‹HÈù ÁöÁ¡ Ãâ·Â
+		// ï¿½æµ¹ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ ï¿½Î‹Hï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½
 		FVector HitLocation = HitResult.Location;
 		float height = StartLocation.Z - HitLocation.Z - 92.0f;
 		height = height / 65.0f * 100.0f;
 		anim->rayHeight = height;
-		// ºÎ‹HÈù ÁöÁ¡À» ±âÁØÀ¸·Î Ãß°¡ÀûÀÎ ·ÎÁ÷ ¼öÇà
+		// ï¿½Î‹Hï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ß°ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 		// ...
 	}
 	else
@@ -278,30 +283,30 @@ void AWakOfSpyCharacter::PerformRaycast()
 		
 	}
 
-	// µğ¹ö±× ¶óÀÎ ±×¸®±â
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½
 	//DrawDebugLine(World, StartLocation, EndLocation, FColor::Green, false, 2.0f);
 }
 void AWakOfSpyCharacter::PerformRaycast2()
 {
-	// ÇöÀç ¿ùµå °¡Á®¿À±â
+	// ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 	UWorld* World = GetWorld();
 	if (!World) return;
 
-	// Raycast¸¦ ¹ß»çÇÒ ½ÃÀÛ À§Ä¡¿Í ¹æÇâ ¼³Á¤
+	// Raycastï¿½ï¿½ ï¿½ß»ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Ä¡ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	FVector StartLocation = GetActorLocation();
 	FVector FowordVector = GetActorForwardVector();
-	FVector EndLocation = StartLocation + (FowordVector* 100.0f); // RaycastÀÇ ÃÖ´ë °Å¸® ¼³Á¤
+	FVector EndLocation = StartLocation + (FowordVector* 100.0f); // Raycastï¿½ï¿½ ï¿½Ö´ï¿½ ï¿½Å¸ï¿½ ï¿½ï¿½ï¿½ï¿½
 
-	// Raycast¸¦ ¼öÇàÇÒ Ã¤³Î ¼³Á¤
+	// Raycastï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ã¤ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	ECollisionChannel TraceChannel = ECC_Visibility;
 
-	// Ãæµ¹ °á°ú¸¦ ÀúÀåÇÒ º¯¼ö
+	// ï¿½æµ¹ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 	FHitResult HitResult;
 
 	FCollisionQueryParams queryParams;
-	queryParams.AddIgnoredActor(this); // ÀÚ±â ÀÚ½ÅÀº ¹«½ÃÇÕ´Ï´Ù.
+	queryParams.AddIgnoredActor(this); // ï¿½Ú±ï¿½ ï¿½Ú½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Õ´Ï´ï¿½.
 
-	// Raycast ½ÇÇà
+	// Raycast ï¿½ï¿½ï¿½ï¿½
 	bool bHit = World->LineTraceSingleByChannel(HitResult, StartLocation, EndLocation, TraceChannel, queryParams);
 
 	if (bHit)
@@ -319,9 +324,9 @@ void AWakOfSpyCharacter::PerformRaycast2()
 				{
 					
 
-					// 1ºÎÅÍ 2±îÁöÀÇ ³­¼ö ¹ß»ı
+					// 1ï¿½ï¿½ï¿½ï¿½ 2ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ß»ï¿½
 					int randomNumber = std::rand() % 2 + 1;
-					Enemy->AmSal(randomNumber); // AWakOfSpyCharacter Å¬·¡½ºÀÇ ¸â¹ö¿¡ Á¢±Ù
+					Enemy->AmSal(randomNumber); // AWakOfSpyCharacter Å¬ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 					//UE_LOG(LogClass, Log, TEXT("%d"), randomNumber);
 					if(randomNumber == 1)
 						anim->PlayAmSal();
@@ -340,11 +345,24 @@ void AWakOfSpyCharacter::PerformRaycast2()
 		canAmSal = false;
 	}
 
-	// µğ¹ö±× ¶óÀÎ ±×¸®±â
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½×¸ï¿½ï¿½ï¿½
 	//DrawDebugLine(World, StartLocation, EndLocation, FColor::Green, false, 2.0f);
 }
 
 
+// í”Œë ˆì´ì–´ ìŠ¤í…Ÿì„ ìˆ˜ì •í•˜ëŠ” í•¨ìˆ˜ êµ¬í˜„
+void AWakOfSpyCharacter::ModifyHealth(float Amount)
+{
+    CurrentHealth = FMath::Clamp(CurrentHealth + Amount, 0.0f, MaxHealth);
 
+    // ì—¬ê¸°ì—ì„œ í•„ìš”í•œ ì¶”ê°€ ì‘ì—…ì„ ìˆ˜í–‰
+}
+
+void AWakOfSpyCharacter::ModifyStamina(float Amount)
+{
+    CurrentStamina = FMath::Clamp(CurrentStamina + Amount, 0.0f, MaxStamina);
+
+    // ì—¬ê¸°ì—ì„œ í•„ìš”í•œ ì¶”ê°€ ì‘ì—…ì„ ìˆ˜í–‰
+}
 
 
