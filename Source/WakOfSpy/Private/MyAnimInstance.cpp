@@ -42,3 +42,28 @@ void UMyAnimInstance::PlayAmSal2()
 	if (AmSal2Montage)
 		Montage_Play(AmSal2Montage, 1.0f);
 }
+
+void UMyAnimInstance::PlayPunch()
+{
+	UE_LOG(LogTemp, Warning, TEXT("ddddddddddddddddd"));
+	combo++;
+	if (combo > 3)
+		combo = 1;
+	switch (combo)
+	{
+	case 1:
+		if (LeftPunch)
+			Montage_Play(LeftPunch, 0.2f);
+		break;
+	case 2:
+		if (RightPunch)
+			Montage_Play(RightPunch, 0.2f);
+		break;
+	case 3:
+		if (ComboPunch)
+			Montage_Play(ComboPunch, 0.2f);
+		break;
+	default:
+		break;
+	}
+}

@@ -88,6 +88,10 @@ protected:
 
 	void AmSalGo2();
 
+	void Attack();
+
+	void Attack2();
+
 	void StartSprinting();
 
 	void StopSprinting();
@@ -111,6 +115,7 @@ protected:
 		class UCapsuleComponent* CollisionComponent;
 	bool canAmSal = false;
 	bool pressAmsal = false;
+	bool pressAttack = false;
 
 	UFUNCTION()
 		void OnOverlapBegin(UPrimitiveComponent* OverlappedComponent, AActor* OtherActor, UPrimitiveComponent* OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult& SweepResult);

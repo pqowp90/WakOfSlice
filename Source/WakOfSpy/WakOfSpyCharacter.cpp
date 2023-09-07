@@ -142,6 +142,9 @@ void AWakOfSpyCharacter::SetupPlayerInputComponent(class UInputComponent* Player
 		EnhancedInputComponent->BindAction(AmSalAction, ETriggerEvent::Triggered, this, &AWakOfSpyCharacter::AmSalGo);
 		EnhancedInputComponent->BindAction(AmSalAction, ETriggerEvent::Completed, this, &AWakOfSpyCharacter::AmSalGo2);
 
+		EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Triggered, this, &AWakOfSpyCharacter::Attack);
+		EnhancedInputComponent->BindAction(AttackAction, ETriggerEvent::Completed, this, &AWakOfSpyCharacter::Attack2);
+
 	}
 
 }
@@ -152,6 +155,14 @@ void AWakOfSpyCharacter::AmSalGo()
 void AWakOfSpyCharacter::AmSalGo2()
 {
 	pressAmsal = false;
+}
+void AWakOfSpyCharacter::Attack()
+{
+	pressAttack = true;
+}
+void AWakOfSpyCharacter::Attack2()
+{
+	pressAttack = false;
 }
 void AWakOfSpyCharacter::StartSprinting()
 {
@@ -328,6 +339,10 @@ void AWakOfSpyCharacter::PerformRaycast2()
 					else
 						anim->PlayAmSal2();
 				}
+			}
+			if (pressAttack)
+			{
+				anim->PlayPunch();
 			}
 		}
 		else

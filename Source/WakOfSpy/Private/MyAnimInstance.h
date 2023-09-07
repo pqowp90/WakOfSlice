@@ -22,6 +22,8 @@ public:
 
 	void PlayAmSal2();
 
+	void PlayPunch();
+
 public:
 
 	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, Category = WalkSpeed)
@@ -38,6 +40,16 @@ public:
 		UAnimMontage* AmSal1Montage;
 	UPROPERTY(EditAnywhere)
 		UAnimMontage* AmSal2Montage;
+
+	UPROPERTY(EditAnywhere)
+		UAnimMontage* LeftPunch;
+	UPROPERTY(EditAnywhere)
+		UAnimMontage* RightPunch;
+	UPROPERTY(EditAnywhere)
+		UAnimMontage* ComboPunch;
+
+	int combo = 0;
+
 };
 
 
